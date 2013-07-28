@@ -1,0 +1,30 @@
+{
+  "name": "broadcaster",
+  "version": "0.0.1",
+  "description": "Add git notes to act as release notes for a non-technical audience",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "",
+  "keywords": [
+    "release",
+    "notes",
+    "git",
+    "git",
+    "notes",
+    "express"
+  ],
+  "author": "Avner Cohen",
+  "license": "MIT",
+  "dependencies": {
+    "jade": "0.x",
+    "less": "1.x",
+    "connect-assets": "2.x",
+    "colors": "~0.6.1",
+    "express": "~3.3.4"
+  },
+  "engines": {
+    "node": "~0.8.x"
+  }
+}
