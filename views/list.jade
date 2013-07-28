@@ -1,0 +1,20 @@
+extends layouts/broadcaster
+
+block content
+  table.table
+    tr
+      th 
+        u Deployed By
+      th 
+        u Date
+      th 
+        u Time
+    tr
+     each item in collection
+      tr
+        td= item.deployed_by
+        td= item.date
+        td= item.time
+      tr.details
+        td(colspan="3").content
+          = item.content

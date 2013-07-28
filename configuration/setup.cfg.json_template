@@ -1,0 +1,15 @@
+{
+  "mail": {
+    "user": "whatever@somewhere.io",
+    "password": "password_goes_here",
+    "from" :"Mr. Release Notes <release.notes@company.com>",
+    "to": "project_managment_team@company.com"
+  },
+  "mongo": {
+    "connection_string": "mongodb://localhost:27017/release_notes",
+    "collection_name": "release_notes"
+  },
+  "global": {
+    "url_showall" : "http://url_to_somwhere/"
+  }
+}

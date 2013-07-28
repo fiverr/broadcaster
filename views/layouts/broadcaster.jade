@@ -1,0 +1,34 @@
+!!!
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/libs/bootstrap/css/cerulean.bootstrap.min.css')
+    link(rel='stylesheet', href='/libs/bootstrap/css/bootstrap-responsive.min.css')
+    link(rel='stylesheet', href='/css/trontastic/jquery-ui-1.10.3.custom.min.css')
+    link(rel='stylesheet', href='/libs/pnotify/jquery.pnotify.default.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    .navbar.navbar-fixed-top
+      ul.nav.navbar-nav
+        li
+          a(href='/create') New                 
+        li
+          a(href='/list') Archive
+      .navbar-inner
+        a(href="/")
+          .container
+            .brand Broadcaster
+            img(src='/imgs/broadcast2.png').logo
+
+    .container
+      .alert-message.warning.hidden
+        = results
+      .row 
+        .hero-unit
+          block content
+
+    script(src="/libs/jquery/jquery-1.9.1.js")
+    script(src="/libs/jquery-ui/jquery-ui-1.10.3.custom.js")
+    script(src="/libs/bootstrap/js/bootstrap.min.js")
+    script(src="/libs/pnotify/jquery.pnotify.min.js")
+    script(src="/libs/broadcaster/broadcaster.js")

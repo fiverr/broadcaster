@@ -1,0 +1,41 @@
+.logo{
+  width:50px;
+}
+
+#date{
+  width:90px;
+}
+
+#time{
+  width:80px;
+}
+span.spacer{
+  padding-left:30px;
+}
+
+label.inline{
+  display:inline;
+}
+
+.long_field{
+  width:400px;
+}
+
+input.no_float{
+  float:none !important;
+  margin-bottom: 10px !important;
+  margin-right: 6px !important;
+}
+.feature{
+  margin:5px;
+  padding:5px;
+  clear:none;  
+}
+.add_update{
+  float:left;
+  clear:none;
+}
+
+td.content, td.content p {
+  font-size:13px;
+}

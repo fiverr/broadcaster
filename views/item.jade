@@ -1,0 +1,31 @@
+.form-group
+  .radio
+      label.inline
+          input(id=major_feature, type='radio', name=feature_type, value='major')
+          | Major Feature
+      span.spacer
+      label.inline
+        input(id=minor_feature, type='radio', name=feature_type, value='minor', checked='checked').no_float
+        | Minor Feature
+.form-group
+  .radio
+      label.inline
+          input(id=type_fix, type='radio', name=fix_or_new, value='fix')
+          | Fix!
+      span.spacer
+      label.inline
+        input(id=type_new, type='radio', name=fix_or_new, value='new', checked='checked').no_float
+        | New!
+.form-group
+  label(for=update_title) Update Title
+  input(name=update_title, id=update_title, type='text',placeholder='Update Title', required='true').form-control.long_field
+.form-group
+  label(for=update_description) Update Description
+  textarea(name=update_description, id=update_description, placeholder='Update Description', required='true').form-control.long_field
+.form-group
+  label(for=developer) Developed By
+  input(name=developer, id=developer, placeholder='Developed By', required='true').form-control
+.form-group
+  label(for=owner) Owner
+  input(name=owner, id=owner, placeholder='Owner', required='true').form-control    
+hr
