@@ -4,7 +4,7 @@
   "description": "Broadcast release notes for a given deployment through mail. Persist past issues to mongodb.",
   "main": "index.js",
   "scripts": {
-    "statt": "nohup node app.js &"
+    "start": "nohup node app.js &"
   },
   "repository": "git@github.com:AvnerCohen/broadcaster.git",
   "keywords": [
