@@ -11,7 +11,8 @@ exports.index = function(req, res){
 };
 
 exports.list = function(req, res){
-  PersistanceProvider.list(0, 20, function(results){
+  //Recent 80 updateds, needs configuration and paging, later.
+  PersistanceProvider.list(0, 80, function(results){
         results.forEach(function(item){
           item.content = "";
           item.updates.forEach(function(update){
@@ -48,7 +49,7 @@ exports.create = function(req, res){
   var counter = ReleaseNotes.dailyCounter();
   var release_id = counter["date"] + "-" + counter["counter"];
   var subject = "Production Deploy Release Notes - " + release_id;
-  //Mailer.sendIt(subject, html, plainText);
+  Mailer.sendIt(subject, html, plainText);
 
   PersistanceProvider.addEntry(releaseNotes, release_id, function(){
     res.render('index', { title: title , results: complete_status});

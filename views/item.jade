@@ -1,15 +1,16 @@
+a(href="#", title="Remove").delete_partial X
 .form-group
   | SEVERITY  
   select#feature_type(required="true").form-control.small_select
     option(value="") Select..
-    option(value="major") Major
-    option(value="minor") Minor
+    option(value="Major") Major
+    option(value="Minor") Minor
   span.spacer
   | TYPE  
   select#fix_or_new(required="true").form-control.small_select
     option(value="") Select..
-    option(value="fix") Fix!
-    option(value="new") New!    
+    option(value="Fix!") Fix!
+    option(value="New!") New!    
 .form-group
   label(for=update_title) Update Title
   input(name=update_title, id=update_title, type='text',placeholder='Update Title', required='true').form-control.long_field

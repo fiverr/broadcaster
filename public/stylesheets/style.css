@@ -43,3 +43,6 @@ td.content, td.content p {
 select.small_select{
   width:90px;
 }
+.delete_partial{
+  display:none;
+}
