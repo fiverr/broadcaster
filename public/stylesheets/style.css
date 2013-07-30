@@ -39,3 +39,7 @@ input.no_float{
 td.content, td.content p {
   font-size:13px;
 }
+
+select.small_select{
+  width:90px;
+}
