@@ -11,7 +11,7 @@ exports.index = function(req, res){
 };
 
 exports.list = function(req, res){
-  //Recent 80 updateds, needs configuration and paging, later.
+  //Recent 80 updates, needs configuration and paging, later.
   PersistanceProvider.list(0, 80, function(results){
         results.forEach(function(item){
           item.content = "";

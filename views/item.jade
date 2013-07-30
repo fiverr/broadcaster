@@ -1,13 +1,13 @@
 a(href="#", title="Remove").delete_partial X
 .form-group
   | SEVERITY  
-  select#feature_type(required="true").form-control.small_select
+  select(id=feature_type, name=feature_type, required='true').form-control.small_select
     option(value="") Select..
     option(value="Major") Major
     option(value="Minor") Minor
   span.spacer
   | TYPE  
-  select#fix_or_new(required="true").form-control.small_select
+  select(id=fix_or_new, name=fix_or_new, required='true').form-control.small_select
     option(value="") Select..
     option(value="Fix!") Fix!
     option(value="New!") New!    
