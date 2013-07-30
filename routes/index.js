@@ -15,23 +15,12 @@ exports.list = function(req, res){
         results.forEach(function(item){
           item.content = "";
           item.updates.forEach(function(update){
-              item.content += generateSingleUpdate(update);
+              item.content += ReleaseNotes.generateSingleUpdate(update);
           });
         });
         res.render('list', { title: title, collection: results });
   });
 };
-
-//TODO duplicated, for now, needs to externailze
-function generateSingleUpdate(update){
-    var feature_type = (update.feature_type == "minor") ? "Minor" : "Major";
-    var fix_or_new = (update.fix_or_new == "new") ? "New!" : "Fix!";
-    var update = "<p><b><span style='color:OliveDrab'>" + feature_type + " Update</span></b></p>"
-      + "<p><b><span style='color:orange'>" + fix_or_new + "</span> " + update.update_title + "</b><br/>"
-      + update.update_description + "<br/>"
-      + "[Owner: " + update.owner + ", Developed by: " + update.developer + "]</p>";
-      return update;
-}
 
 exports.next_item = function(req, res){
   var incr = req.query.incr;
@@ -59,7 +48,7 @@ exports.create = function(req, res){
   var counter = ReleaseNotes.dailyCounter();
   var release_id = counter["date"] + "-" + counter["counter"];
   var subject = "Production Deploy Release Notes - " + release_id;
-  Mailer.sendIt(subject, html, plainText);
+  //Mailer.sendIt(subject, html, plainText);
 
   PersistanceProvider.addEntry(releaseNotes, release_id, function(){
     res.render('index', { title: title , results: complete_status});

@@ -23,7 +23,6 @@ $(document).ready(function(){
     BROADCASTER.addItem();
   });
 
-
   //hack form the land of hacks
   $("td.content").each(function(item){
     var escaped_text = $(this).text();
