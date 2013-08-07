@@ -5,6 +5,11 @@
       dateFormat: "d MM, y"
     });
     $("#date").datepicker('setDate', new Date());
+    var date = new Date();
+    var min =  date.getMinutes();
+    min = (min < 10) ? "0" + min : min;
+    var time_str = (date.getHours() + ":" + min).toString();  
+    $("#time").val(time_str); 
   });
 
 $(document).ready(function(){

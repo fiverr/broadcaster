@@ -7,9 +7,7 @@ var PersistanceProvider = new Persistance();
 var title = 'Broadcaster - Generate your release notes';
 
 exports.index = function(req, res){
-  var date = new Date();
-  var time_str = (date.getHours() + ":" + date.getMinutes()).toString();
-  res.render('index', { title: title, time: time_str });
+  res.render('index', { title: title});
 };
 
 exports.list = function(req, res){
