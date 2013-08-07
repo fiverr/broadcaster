@@ -6,26 +6,10 @@ block content
       h2 Release Notes Generator
       != form
       .form-group
-        label(for='date') Date
-          span.spacer Time
+        label(for='date') Date / Time
+          span.spacer
         input#date(name='date', type='text',placeholder='Today').form-control
-        select#time(name='time').form-control                 
-          option(value="8:00") 08:00
-          option(value="9:00") 09:00
-          option(value="10:00") 10:00
-          option(value="11:00") 11:00
-          option(value="12:00", selected="true") 12:00
-          option(value="13:00") 13:00
-          option(value="14:00") 14:00
-          option(value="15:00") 15:00
-          option(value="16:00") 16:00
-          option(value="17:00") 17:00
-          option(value="18:00") 18:00
-          option(value="19:00") 19:00
-          option(value="20:00") 20:00
-          option(value="21:00") 21:00
-          option(value="22:00") 22:00
-          option(value="23:00") 23:00
+        input#time(name='time',type='text', value=time).form-control         
       .form-group
         label(for='deployed_by') Deployed By
         input#deployed_by(name='deployed_by',type='text',placeholder='Deployed By', required='true').form-control

@@ -5,8 +5,6 @@
       dateFormat: "d MM, y"
     });
     $("#date").datepicker('setDate', new Date());
-    var now = (new Date().getHours() + ":00");
-    $( "#time").val(now);
   });
 
 $(document).ready(function(){
