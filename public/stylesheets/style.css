@@ -31,10 +31,6 @@ input.no_float{
   padding:5px;
   clear:none;  
 }
-.add_update{
-  float:left;
-  clear:none;
-}
 
 td.content, td.content p {
   font-size:13px;
@@ -42,7 +38,4 @@ td.content, td.content p {
 
 select.small_select{
   width:90px;
-}
-.delete_partial{
-  display:none;
 }
