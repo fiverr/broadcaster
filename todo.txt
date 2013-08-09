@@ -1,0 +1,8 @@
+TODO:
+
+* Aggregate the features reported in single
+
+
+Done:
+* Fix top bar to remove new
+* Make list default and new hidden or password protected
