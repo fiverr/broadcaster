@@ -1,7 +1,7 @@
 TODO:
 
 * Aggregate the features reported in single
-
+* Add deploy process add naught support (tag?)
 
 Done:
 * Fix top bar to remove new
