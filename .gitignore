@@ -3,3 +3,4 @@ node_modules
 *.log
 *.iml
 /configuration/*.json
+/release_counter.db
