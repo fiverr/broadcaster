@@ -14,10 +14,7 @@ exports.list = function(req, res){
   //Recent 80 updates, needs configuration and paging, later.
   PersistanceProvider.list(0, 80, function(results){
         results.forEach(function(item){
-          item.content = "";
-          item.updates.forEach(function(update){
-              item.content += ReleaseNotes.generateSingleUpdate(update);
-          });
+          item.content = ReleaseNotes.htmlForUpdates(item.updates);
         });
         res.render('list', { title: title, collection: results });
   });
