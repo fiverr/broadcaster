@@ -1,5 +1,5 @@
 .logo{
-  width:50px;
+  width:80px;
 }
 
 #date{
@@ -38,4 +38,8 @@ td.content, td.content p {
 
 select.small_select{
   width:90px;
+}
+
+.navbar, .navbar-inner{
+  background: #353537 url("/imgs/bg-main-header.png") repeat-x top left;
 }
