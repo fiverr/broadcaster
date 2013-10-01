@@ -43,3 +43,7 @@ select.small_select{
 .navbar, .navbar-inner{
   background: #353537 url("/imgs/bg-main-header.png") repeat-x top left;
 }
+
+h3 u {
+  color: #353537;
+}
