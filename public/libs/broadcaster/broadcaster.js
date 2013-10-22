@@ -32,13 +32,6 @@ $(document).ready(function(){
     BROADCASTER.removeItem();
   });
 
-  //hack form the land of hacks
-  $("td.content").each(function(item){
-    var escaped_text = $(this).text();
-    escaped_text = unescape(escaped_text);
-    $(this).html(escaped_text);
-  });
-
 });
 
 var BROADCASTER = {
