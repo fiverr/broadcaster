@@ -34,6 +34,7 @@ app.configure('production', function(){
 // Routes
 
 app.get('/', routes.list);
+app.get('/all', routes.list_all);
 app.get('/new', routes.index);
 app.get('/next_item', routes.next_item);
 app.post('/create', routes.create);

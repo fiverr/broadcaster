@@ -20,6 +20,17 @@ exports.list = function(req, res){
   });
 };
 
+exports.list_all = function(req, res){
+  //Of course 5000 is not all, but still, it's allot !
+  PersistanceProvider.list(0, 5000, function(results){
+        results.forEach(function(item){
+          item.content = ReleaseNotes.htmlForUpdates(item.updates);
+        });
+        res.render('list', { title: title, collection: results });
+  });
+};
+
+
 exports.next_item = function(req, res){
   var incr = req.query.incr;
   var locals = {
