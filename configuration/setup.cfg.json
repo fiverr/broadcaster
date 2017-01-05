@@ -1,7 +1,7 @@
 {
   "mail": {
     "from" :"Fiverr Release Notes <release.notes@fiverr.com>",
-    "to": "kyle.b@fiverr.com",
+    "to": "all@fiverr.com",
     "server_name" : "mail"
   },
   "mongo": {
