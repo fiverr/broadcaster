@@ -64,3 +64,7 @@ exports.create = function(req, res){
   });
 
 };
+
+exports.ping = function(req, res) {
+  res.send('pong from broadcaster');
+};

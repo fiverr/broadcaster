@@ -1,0 +1,14 @@
+{
+  "mail": {
+    "from" :"Fiverr Release Notes <release.notes@fiverr.com>",
+    "to": "kyle.b@fiverr.com",
+    "server_name" : "mail"
+  },
+  "mongo": {
+    "connection_string": "mongodb://services_rs.service.consul:27017/release_notes?replicaSet=services_rs&readPreference=secondaryPreferred",
+    "collection_name": "release_notes"
+  },
+  "global": {
+    "url_showall" : "http://releasenotes.fiverr-gw.com/"
+  }
+}

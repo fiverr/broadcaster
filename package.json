@@ -4,9 +4,10 @@
   "description": "Broadcast release notes for a given deployment through mail. Persist past issues to mongodb.",
   "main": "index.js",
   "scripts": {
-    "start": "nohup node app.js &"
+    "start": "NODE_ENV=production nohup node app.js > /dev/null 2>&1 &",
+    "stop": "sudo netstat -nlap | grep 7000 | head -1 | awk '{print $7}' | awk -F/ '{print \"kill -9\", $1}' | bash"
   },
-  "repository": "git@github.com:AvnerCohen/broadcaster.git",
+  "repository": "git@github.com:fiverr/broadcaster.git",
   "keywords": [
     "release",
     "notes",
@@ -26,7 +27,9 @@
     "mongodb": "~1.3.12",
     "naught": "~1.1.0",
     "nodemailer": "~1.11",
-    "nodemailer-direct-transport": "^1.1.0"
+    "nodemailer-direct-transport": "^1.1.0",
+    "shipit-deploy": "2.2",
+    "shipit-shared": "4.4.1"
   },
   "engines": {
     "node": "~0.8.x"
