@@ -66,9 +66,5 @@ exports.create = function(req, res){
 };
 
 exports.ping = function(req, res) {
-  res.send(JSON.stringify({
-    ack: 'pong from broadcaster',
-    from: process.pid,
-    at: new Date()
-  }), 200);
+  res.send('pong from broadcaster');
 };
