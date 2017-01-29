@@ -1,6 +1,5 @@
 {
   "mail": {
-    "server_name" : "mail.domain.com",
     "user": "whatever@somewhere.io",
     "password": "password_goes_here",
     "from" :"Mr. Release Notes <release.notes@company.com>",
